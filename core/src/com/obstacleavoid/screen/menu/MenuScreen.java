@@ -13,6 +13,7 @@ import com.badlogic.gdx.utils.Logger;
 import com.obstacleavoid.ObstacleAvoidGame;
 import com.obstacleavoid.assets.AssetDescriptors;
 import com.obstacleavoid.assets.RegionNames;
+import com.obstacleavoid.screen.game.GameScreen;
 import com.obstacleavoid.screen.game._old.GameScreenOld;
 
 public class MenuScreen extends MenuScreenBase {
@@ -91,7 +92,7 @@ public class MenuScreen extends MenuScreenBase {
 
     private void play() {
         log.debug("play()");
-        game.setScreen(new GameScreenOld(game));
+        game.setScreen(new GameScreen(game));
     }
 
     private void showHighScore() {
